@@ -2,14 +2,7 @@
 const nextConfig = {
   // distDir:"build"
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "roar.media",
-        port: "",
-        //  pathname: "/account123/**",
-      },
-    ],
+    domains: ["roar.media"],
   },
 };
 

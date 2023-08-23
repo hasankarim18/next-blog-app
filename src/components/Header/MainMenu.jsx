@@ -6,7 +6,7 @@ import React from "react";
 const navLinks = [
   { slug: "/", name: "home" },
   { slug: "/about", name: "about" },
-  { slug: "/blog", name: "about" },
+  { slug: "/blog", name: "blog" },
 ];
 
 const MainMenu = () => {
