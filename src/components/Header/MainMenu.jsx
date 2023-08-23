@@ -11,7 +11,7 @@ const navLinks = [
 
 const MainMenu = () => {
   const pathname = usePathname();
-  console.log(pathname);
+  
   return (
     <div>
       <div className="navbar bg-base-100">
