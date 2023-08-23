@@ -6,20 +6,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 const getAlltPost = async () => {
-  const url = "https://basic-blog.teamrabbil.com/api/post-list/2";
+  const url = "https://basic-blog.teamrabbil.com/api/post-newest";
   const res = await fetch(url);
   const data = await res.json();
   return data;
 };
 
 const AllBlogs = async () => {
-  const appPosts = await getAlltPost();
-
+  const allPosts = await getAlltPost();
+ 
   return (
     <div className="my-8">
       <SectionHeading>Latest Posts</SectionHeading>
       <div className="mt-4 grid  grid-cols-2 md:grid-cols-2 gap-8 lg:grid-cols-4 ">
-        {appPosts.map((post) => {
+        {allPosts.map((post) => {
           const dateToBeFormate = post.updated_at;
           return (
             <div key={post.id} className="flex w-full justify-center">
